@@ -65,34 +65,28 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ct
 <!-- begin Header -->
 	
 <header class="header">
-	<!-- <div class="topbar">
+	<div class="header__contacts">
 		<div class="container">
-			<div class="topbar__row">
-				<div class="date">
-					<p><i class="icon-home"></i>г.Барнаул ул.Попова 70</p> 	
-					<p><a href="tel:+73852699289"><i class="icon-phone"></i>(+7) (3852) 699-289</a></p>  	
-					<p><a href="tel:+79029989289"><i class="icon-mobile"></i>(+7) (902) 998-9289</a></p> 
-					<p><a href="https://wa.me/+79029989289"><i class="icon-phone"></i>WhatsApp на Попова 70</a></p> 
-				</div>
-				<div class="date">
-					<p><i class="icon-home"></i>г.Барнаул ул.Взлётная 16</p> 	
-					<p><a href="tel:+73852699389"><i class="icon-phone"></i>(+7) (3852) 699-389</a></p>  	
-					<p><a href="tel:+79029989389"><i class="icon-mobile"></i>(+7) (902) 998-93-89</a></p> 
-					<p><a href="https://wa.me/+79029989389"><i class="icon-phone"></i>WhatsApp на Взлётная 16</a></p> 
-				</div>
+			<div class="header__contact">
+				<div class="contacts__location icon-globe">г.Барнаул ул.Взлётная 16</div>
+				<div class="contacts__location icon-globe">г.Барнаул ул.Попова 70</div>
+			</div>
+			<div class="header__contact">
+				<a href="" class="contacts__link icon-mobile">+7 (902) 998-93-89</a>
+				<a href="" class="contacts__link icon-mobile">+7 (902) 998-92-89</a>
 			</div>
 		</div>
-	</div> -->
-
+	</div>
 	<div class="container header__container">
 		<nav class="header__row">
-				<a href="" class="header__logo-link"><img src="img/logo2.png" alt="" class="header__logo"></a>
-				<ul class="header__ul">
-					<li class="header__li _active"><a href="" class="header__link">Главная</a></li>
-					<li class="header__li"><a href="" class="header__link">Главная</a></li>
-					<li class="header__li"><a href="" class="header__link">Главная</a></li>
-					<li class="header__li"><a href="" class="header__link">Главная</a></li>
-				</ul>
+			<a href="" class="header__logo-link"><img src="img/logo2.png" alt="" class="header__logo"></a>
+			<ul class="header__ul">
+				<li class="header__li _active"><a href="" class="header__link">Главная</a></li>
+				<li class="header__li"><a href="" class="header__link">Главная</a></li>
+				<li class="header__li"><a href="" class="header__link">Главная</a></li>
+				<li class="header__li"><a href="" class="header__link">Главная</a></li>
+			</ul>
+			<a href="" class="contacts__link header__mail">aon2002@yandex.ru</a>
 			<div class="header__menu menu">
 				<button type="button" class="menu__icon icon-menu"><span></span></button>
 				<nav class="menu__body">
@@ -102,6 +96,16 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ct
 						<li class="header__li"><a href="" class="header__link">Главная</a></li>
 						<li class="header__li"><a href="" class="header__link">Главная</a></li>
 					</ul>
+					<div class="header__contacts-mob">
+						<div class="header__contact">
+							<div class="contacts__location icon-globe">г.Барнаул ул.Взлётная 16</div>
+							<div class="contacts__location icon-globe">г.Барнаул ул.Попова 70</div>
+						</div>
+						<div class="header__contact">
+							<a href="" class="contacts__link icon-mobile">+7 (902) 998-93-89</a>
+							<a href="" class="contacts__link icon-mobile">+7 (902) 998-92-89</a>
+						</div>
+					</div>
 				</nav>
 			</div>
 		</nav>
@@ -660,13 +664,13 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ct
 						<div class="contacts__item">
 							<div class="contacts__tels">
 								<div class="contacts__location icon-globe">г.Барнаул ул.Взлётная 16</div>
-								<a href="" class="contacts__link icon-mobile">(+7) (3852) 699-389</a>
-								<a href="" class="contacts__link icon-mobile">(+7) (3852) 699-389</a>
+								<a href="" class="contacts__link icon-mobile">+7 (902) 998-93-89</a>
+								<a href="" class="contacts__link icon-phone">+7 (3852) 699-389</a>
 							</div>
 							<div class="contacts__tels">
-								<div class="contacts__location icon-globe">г.Барнаул ул.Взлётная 16</div>
-								<a href="" class="contacts__link icon-mobile">(+7) (3852) 699-389</a>
-								<a href="" class="contacts__link icon-mobile">(+7) (3852) 699-389</a>
+								<div class="contacts__location icon-globe">г.Барнаул ул.Попова 70</div>
+								<a href="" class="contacts__link icon-mobile">+7 (902) 998-92-89</a>
+								<a href="" class="contacts__link icon-phone">+7 (3852) 699-289</a>
 							</div>
 						</div>
 						<a href="" class="contacts__link contacts__mail icon-mail">aon2002@yandex.ru</a>
@@ -707,8 +711,8 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ct
 					</ul>
 				</div>
 				<div class="footer__contacts">
-					<a href="" class="contacts__link icon-mobile">(+7) (3852) 699-389</a>
-					<a href="" class="contacts__link icon-mobile">(+7) (3852) 699-389</a>
+					<a href="" class="contacts__link icon-mobile">+7 (902) 998-93-89</a>
+					<a href="" class="contacts__link icon-mobile">+7 (902) 998-92-89</a>
 					<a href="" class="contacts__link contacts__mail icon-mail">aon2002@yandex.ru</a>
 
 				</div>
