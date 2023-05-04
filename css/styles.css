@@ -4161,19 +4161,57 @@ header .title-timetable{
   width: 100%;  
   background: #fff;
   border-bottom: 1px solid #333;
+}
+.header__contacts {
+  background: #3b18c7;
   padding: 10px 0;
+  font-size: 14px;
 }
-.container {
+.header__contacts .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
 }
-.header__container {
+.header__contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.header__contacts-mob .header__contact {
+  flex-direction: column;
+}
+.header .contacts__location {
+  color: #fff;
+  font-weight: normal;
+}
+.header .contacts__link {
+  color: #fff;
+  margin-left: auto;
+}
+body .header .contacts__link:hover {
+  color: #f63;
+}
+.header__contacts-mob {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 14px;
+}
 
+.header .contacts__link.header__mail {
+  margin: 0;
+  color: #565656;
+  font-size: 16px;
+  font-weight: 600;
 }
+
 .header__row {
-
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 5rem;
+  gap: 2rem;
 }
 .header__logo-link {
   flex: 0 1 70px; 
@@ -4184,12 +4222,18 @@ header .title-timetable{
 .header__ul {
   display: flex;
   align-items: center;
-  gap: 5rem;
+  gap: 4rem;
 }
 @media (max-width: 767px){
+  .header__row {
+    
+  }
   .header__ul {
     display: none;
   } 
+  .header__contacts {
+    display: none;
+  }
 }
 
 .header__link {
@@ -4224,10 +4268,12 @@ header .title-timetable{
 }
 .menu__body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .menu__body .header__link {
   font-size: 20px;
+  color: #fff;
 }
 
 /****************  $Quiz  *****************/
@@ -4292,12 +4338,7 @@ header .title-timetable{
   display: inline-block;
   margin-top: 1.5rem;
 }
-.icon-globe {
-}
-.contacts__link {
-}
-.icon-mobile {
-}
+
 .contacts__time {
   display: flex;
   flex-direction: column;
@@ -4384,7 +4425,9 @@ header .title-timetable{
   margin: 0;
   color: #fff;
 }
-
+.contacts__link:hover {
+  color: #f63;
+}
 /*****************************  $Hero  *****************************/
 .hero {
 }
